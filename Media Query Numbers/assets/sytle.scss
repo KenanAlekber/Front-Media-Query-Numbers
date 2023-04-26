@@ -1,0 +1,70 @@
+@use '../assets/utils/variable' as variable;
+@use '../assets/utils/mixin' as mixin;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 250px;
+    margin-right: 100px;
+
+    ul {
+        display: flex;
+        list-style: none;
+
+
+        .one {
+            @include mixin.one-four;
+        }
+
+        .two {
+            @include mixin.two-three;
+        }
+
+        .three {
+            margin-top: 59px;
+            @include mixin.two-three;
+        }
+
+        .four {
+            @include mixin.one-four;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+
+    .numbers {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            padding-top: 150px;
+
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 200px !important;
+                margin: 0;
+                margin-left: 5%;
+                margin-right: 5%;
+                width: 45% !important;
+                max-width: 50%;
+                margin: 2% !important;
+                padding: 5px;
+            }
+        }
+    }
+}

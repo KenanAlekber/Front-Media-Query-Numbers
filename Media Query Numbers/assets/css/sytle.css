@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-top: 250px;
+  margin-right: 100px;
+}
+.numbers ul {
+  display: flex;
+  list-style: none;
+}
+.numbers ul .one {
+  margin-top: 59px;
+  margin-left: 15px;
+  font-size: 40px;
+  background-color: #5454bf;
+  width: 300px;
+  height: 80px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.numbers ul .two {
+  margin-left: 15px;
+  font-size: 40px;
+  background-color: #5454bf;
+  width: 300px;
+  height: 140px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.numbers ul .three {
+  margin-top: 59px;
+  margin-left: 15px;
+  font-size: 40px;
+  background-color: #5454bf;
+  width: 300px;
+  height: 140px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.numbers ul .four {
+  margin-top: 59px;
+  margin-left: 15px;
+  font-size: 40px;
+  background-color: #5454bf;
+  width: 300px;
+  height: 80px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+@media (max-width: 620px) {
+  .numbers {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .numbers ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 150px;
+  }
+  .numbers ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px !important;
+    margin: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 45% !important;
+    max-width: 50%;
+    margin: 2% !important;
+    padding: 5px;
+  }
+}/*# sourceMappingURL=sytle.css.map */

@@ -1,0 +1,28 @@
+@use '../utils/variable' as variable;
+
+@mixin one-four {
+    margin-top: 59px;
+    margin-left: 15px;
+    font-size: 40px;
+    background-color: variable.$backgroundColor;
+    width: 300px;
+    height: 80px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: variable.$textColor;
+}
+
+@mixin two-three {
+    margin-left: 15px;
+    font-size: 40px;
+    background-color: variable.$backgroundColor;
+    width: 300px;
+    height: 140px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: variable.$textColor;
+}
